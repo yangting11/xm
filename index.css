@@ -172,7 +172,7 @@
 		margin: 0px;
 		padding: 0px;
 	}
-	.footer{
+	.my-footer{
 		background: black;
 		width: 100%;
 		color: #fff;
@@ -182,7 +182,7 @@
 		width: 80%;
 		margin: auto;
 	}
-	.footer li{
+	.my-footer li{
 		list-style: none;
 		text-align: left;
 		line-height: 30px;
@@ -355,7 +355,7 @@
 		margin: 0px;
 		padding: 0px;
 	}
-	.footer{
+	.my-footer{
 		background: black;
 		width: 100%;
 		color: #fff;
@@ -365,7 +365,7 @@
 		width: 90%;
 		margin: auto;
 	}
-	.footer li{
+	.my-footer li{
 		list-style: none;
 		text-align: left;
 		line-height: 30px;
@@ -382,6 +382,7 @@
 		width: 100%;
 		text-align: center;
 		margin-top: 20px;
+		height: 400px;
 	}
 	.right-footer img{ 
 		width: 140px;
