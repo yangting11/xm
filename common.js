@@ -2,7 +2,7 @@
 // 	alert(1)
 // 	$('#headerImg').css('background','url('./images/banner1.png') center center no-repeat')
 // })
-var interBj = [ './images/banner1.png','./images/banner2.png','./images/banner3.png'];
+var interBj = [ './images/banner2.png','./images/banner4.jpg','./images/banner1.png'];
 var inter;
 var defaultBj = 0;
 var click = false;
@@ -56,6 +56,19 @@ $(document).ready(function(){
 		click = true;
 		$(".navli").removeClass('active');
 		$(this).addClass('active')
+	})
+	$.ajax({
+		method:'get',
+		url:'./news.json',
+		dataType: "json",
+		success:function(dataRes){
+			let data = dataRes.data
+			for(let i in data){
+				$("#newsList").append("<li><div class='newsTitle'><a href='/newsPage.html?id="+i+"'>"+data[i].title+"</a></div><div class='newsTime'>"+ data[i].time +"</div></li>")
+			}
+		},
+		error:function(err){
+		}
 	})
 })
 
