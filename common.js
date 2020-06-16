@@ -82,3 +82,7 @@ function interFunc(){
 		$('#headerImg').attr("src",interBj[defaultBj])
 	},3000)
 }
+
+function openPage(){
+	window.open('./product.html')
+}

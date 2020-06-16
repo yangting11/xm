@@ -1,0 +1,53 @@
+.pageTitle{
+    width: 100%;
+    height: 160px;
+    background: rgb(20, 30, 87);
+    padding: 20px;
+    color: #fff;
+    line-height: 140px;
+    font-size: 36px;
+    text-indent: 4em;
+}
+.productContent{
+    width: 80%;
+    height: 500px;
+    margin: 40px 10%;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+.productLeft{
+    width: 70%;
+    float: left;
+}
+.productRight{
+    width: 30%;
+    float: left;
+}
+.productRight img{
+    margin-top: 30px;
+}
+.productLeft h2{
+    font-family: '微软雅黑';
+    font-size: 28px;
+    font-weight: 700;
+}
+.productLeft p{
+    padding-right: 40px;
+    font-size: 12px;
+    line-height: 30px;
+}
+.connectNow{
+    padding:8px 50px;
+    display: inline-block;
+    color: #fff;
+    background-color: rgb(10, 173, 10);
+}
+
+@media (max-width: 768px){
+    .productLeft{
+        width: 100%;
+    }
+    .productRight{
+        width: 100%;
+    }
+}
