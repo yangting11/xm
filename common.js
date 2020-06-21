@@ -2,7 +2,7 @@
 // 	alert(1)
 // 	$('#headerImg').css('background','url('./images/banner1.png') center center no-repeat')
 // })
-var interBj = [ './images/banner2.png','./images/banner4.jpg','./images/banner1.png'];
+var interBj = [ './images/banner5.png','./images/banner4.png','./images/banner2.png','./images/banner1.jpg','./images/banner4.png'];
 var inter;
 var defaultBj = 0;
 var click = false;
@@ -14,7 +14,22 @@ $(document).ready(function(){
 	$('#headerImg').mouseleave(function(){
 		interFunc()
 	})
-	
+	$("#leftArrow").on('click',function(){
+		if(defaultBj==0){
+			defaultBj = interBj.length - 1
+		}else{
+			defaultBj -- ;
+		}
+		$('#headerImg').attr("src",interBj[defaultBj])
+	})
+	$("#rightArrow").on('click',function(){
+		if(defaultBj==interBj.length - 1){
+			defaultBj = 0;
+		}else{
+			defaultBj ++ ;
+		}
+		$('#headerImg').attr("src",interBj[defaultBj])
+	})
 	//滚动条滚动到指定位置触发下面事件
 	var getDiv_md = $("#aboutus");
 	var offSet = getDiv_md.offset().top;
@@ -74,7 +89,7 @@ $(document).ready(function(){
 
 function interFunc(){
 	inter = setInterval(function(){
-		if(defaultBj<2){
+		if(defaultBj<4){
 			defaultBj ++ ;
 		}else{
 			defaultBj = 0 ;

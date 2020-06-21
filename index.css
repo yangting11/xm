@@ -21,9 +21,32 @@
 		position: relative;
 		margin-top: 40px;
 	}
+	.leftArrow{
+		position: absolute;
+		left: 20px;
+		top: 240px;
+		width: 64px;
+		height: 64px;
+		background-image: url(/images/left1.png);
+	}
+	.leftArrow:hover{
+		background-image: url(/images/left.png);
+	}
+	.rightArrow{
+		position: absolute;
+		right: 20px;
+		top: 240px;
+		width: 64px;
+		height: 64px;
+		background-image: url(/images/right1.png);
+	}
+	.rightArrow:hover{
+		background-image: url(/images/right.png);
+	}
 	#headerImg{
+		margin-top: 20px;
 		width: 100%;
-		/* height: 300px; */
+		max-height: 600px;
 		background-position: center center;
 		background-size: 100%;
 		background-repeat: no-repeat;
@@ -272,6 +295,9 @@
 	}
 	#headerImg{
 		width: 100%;
+	}
+	.leftArrow,.rightArrow{
+		display: none;
 	}
 	.myContent-info{
 		width: 100%;
