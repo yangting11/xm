@@ -98,6 +98,6 @@ function interFunc(){
 	},3000)
 }
 
-function openPage(){
-	window.open('./product.html')
+function openPage(page){
+	window.open(page)
 }
