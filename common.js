@@ -86,7 +86,12 @@ $(document).ready(function(){
 		}
 	})
 })
-
+function closeContact(){
+	$("#contactBox").css('display','none');
+}
+function openContact(){
+	$("#contactBox").css('display','block');
+}
 function interFunc(){
 	inter = setInterval(function(){
 		if(defaultBj<4){
